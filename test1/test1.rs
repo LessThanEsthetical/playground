@@ -48,3 +48,60 @@ use std::io;
 //    println!("is_locked = {}.", is_locked);
 //    println!("can_edit = {}.", can_edit);
 //}
+
+//fn main() {
+//
+//    // Unlike C, these will be casted as bool than int
+//    let a = { -2 > 5 };
+//    let b = { 0 < 7 };
+//    let c = { 0 == 0 };
+//    let d = { a && b || c };
+//
+//    // So you need to cast them there as integers
+//    println!("a = {}.", a as i8);
+//    println!("b = {}.", b as i8);
+//    println!("c = {}.", c as i8);
+//    println!("d = {}.", d as i8);
+//}
+
+//fn main() {
+//    const a: i32 = 19;
+//    const b: i32 = 10;
+//    let c = { a < b };
+//
+//    println!("c = {}.", c);
+//
+//    // Rust and Go doesn't have ternary operators like those of C and Python AFAIK
+//    // It's still possible to make one line condition albeit it'll be highly unreadable
+//    if a < b { println!("First number is less than second."); } else { println!("First number is bigger than or equal to second."); }
+//}
+
+//fn main() {
+//
+//    println!("1 for hello\n2 for bye\nChoose number: ");
+//    let mut input = String::new();
+//    io::stdin().read_line(&mut input).expect("Failed to read the line.");
+//    let choice: i32 = input.trim().parse().expect("Input is not an integer.");
+//
+//    // There's no switch case in Rust, instead I'm going to use match
+//    match &choice {
+//        1 => println!("Hello!"),
+//        2 => println!("Bye!"),
+//        _ => println!("Why you didn't provide 1 or 2? :("), // Underscore works as "default" case
+//    }
+//}
+
+//fn main() {
+//    // In Rust formatting style, it is adviced to use UPPERCASE for variable names
+//    // The exclamation mark "!" is Rust equivalent to C tilde "~" for bitwise operators
+//    // Also, there's no "mods" for variable types (like "unsigned" for char)
+//    // But since unsigned char equals 255 bytes, we can assume unsigned integer (u8) will do same trick
+//    const A: u8 = 153;
+//    const B: u8 = !A;
+//
+//    // Take 8, the number of available bits, add 2 (because of 0b at the start), then put that
+//    // number between # and b, so it becomes {:#010b}
+//    println!("A = {}, binary = {:#010b}", A, A);
+//    println!("B = {}, binary = {:#010b}", B, B);
+//}
+
