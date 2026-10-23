@@ -57,7 +57,7 @@ import "fmt"
 //
 //    fmt.Printf("c = %v\n", c)
 //
-//    // As in Rust, there's no tenirary operations akin to Python or C
+//    // As in Rust, there's no ternary operations akin to Python or C
 //    // But one line if else still possbile
 //    // Not advised, it makes code uglier and unreadable
 //    if a < b { fmt.Println("First number is less than second") } else { fmt.Println("First number is bigger than or equal to second") }
